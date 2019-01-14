@@ -2952,7 +2952,7 @@ ifeq ($(TARGET_BUILD_TYPE),debug)
   # Assume non-release recoveries skip signature check
   extra_ota_args := --no_signing
 endif
-name := $(name)-ota-$(FILE_NAME_TAG)
+name := SlimCAF-9.0-$(shell date +%Y%m%d)-$(TARGET_DEVICE)
 
 INTERNAL_OTA_PACKAGE_TARGET := $(PRODUCT_OUT)/$(name).zip
 
